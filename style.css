@@ -1,0 +1,367 @@
+html *{
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: gainsboro;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav img{
+    height: 25px;
+}
+.logo{
+    margin-left: 2%;
+}
+.fa-bars{
+    font-size: 25px;
+}
+.ytlogo{
+    background-color: transparent;
+    border: none;
+}
+.search-bar{
+    height: 24px;
+    width: 25%;
+    margin: 0 0 0 15%;
+    border: 1px solid gray;
+    padding: 2px 25px;
+
+}
+nav a {
+    width: 3%;
+    margin: 0 1%;
+    font-size: 20px;
+    background-color: transparent;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: gray;
+}
+.profile{
+    height: 35px;
+    border-radius: 50%;
+}
+nav button[type="submit"]{
+    font-size: 13px;
+    color: gray;
+    width: 7%;
+    height: 30px;
+    margin: 0 15% 0 0;
+    border: 1px solid gray;
+    border-left: none;
+}
+button:focus, input:focus {
+    outline: none;
+}
+#mains{
+    background-color: white;
+    width: 90%;
+    height: 2500px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#video {
+    width: 60%;
+    height: 750px;
+    background-color: white;  
+}
+#video h2{
+    width: 100%;
+    font-weight: normal;
+    font-size: 23px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#iframecon{
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#likes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgb(187, 185, 185);
+}
+#likes p, #likes > span{
+    padding: 0 10px;
+    color: rgb(62, 65, 65);
+}
+#likes > span  >span{
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+}
+#likes button{
+    font-size: 15px;
+    color: rgb(82, 80, 80);
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: transparent;
+}
+button:hover{
+    cursor: pointer;
+}
+#thumbs {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+#comments {
+    position: absolute;
+    top: 800px;
+    width: 55%;
+    height: 600px;
+    background-color: white;
+}
+#youtuber-card > span{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+#youtuber-card > span > span{
+    flex: 1;
+}
+.title{
+    font-weight: 600;
+    padding-left: 20px;
+}
+.subtitle{
+    font-size: 15px;
+    padding-left: 20px;
+    color: rgb(94, 93, 93);
+}
+#youtuber-card img, .comhead2>img, .comcards img{
+    border-radius: 50%;
+    margin-left: 3%;
+}
+#youtuber-card{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(187, 185, 185);
+}
+.subscribe{
+    margin-right: 3%;
+    background-color: rgb(206, 7, 7);
+    color: white;
+    height: 35px;
+    font-size: 15px;
+    padding: 0 10px;
+    border: 1px solid rgb(206, 7, 7);
+}
+.des{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+.comhead1 {
+    display: flex;
+    align-items: center;
+}
+.comhead1 > p{
+    margin: 30px;
+    font-size: 20px;
+}
+.comhead1 > button{
+    height: 30px;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 15px;
+    color: rgb(100, 98, 98);
+}
+.comhead2{
+    display: flex;
+    align-items: center;
+}
+.comhead2 input{
+    height: 30px;
+    margin: 0 2%;
+    flex-grow: 1;
+    background-color: rgb(240, 238, 238);
+    border: none;
+    font-size: 16px;
+}
+.comcards{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    padding: 20px 0;
+}
+.comcards >img, .comcards>div{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.subcomcards p{
+    padding: 10px 0;
+}
+.subcomcards > h4 > span{
+    color: gray;
+    padding-left: 30px;
+}
+.subcomcards > div *{
+    color: rgb(58, 58, 58);
+    border: none;
+    margin: 5px 2px;
+    background-color: transparent;
+}
+#thumbhead{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#thumbhead > p{
+    padding-left: 5%;
+    width: 40%;
+}
+#thumbhead > span > button{
+    padding-right: 10%;
+}
+#thumbhead span{
+    display: flex;
+    align-items: center;
+    color: rgb(90, 89, 89);
+    font-size: 20px;
+    font-weight: normal;
+}
+#thumbhead button{
+    margin-left: 10px;
+    font-size: 25px;
+    color: blue;
+    background-color: transparent;
+    border: none;
+}
+.thumbcards {
+    display: flex;
+    height: 120px;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+.thumbcards h5{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+.thumbcards p{
+    margin: 0px 10px;
+    color: rgb(75, 73, 73);
+    font-size: 14px;
+}
+
+
+@media (max-width: 1000px){
+
+    #comments{
+        position: static;
+        width: 100%;
+    }
+    #video{
+        width: 100%;
+    }
+    #thumbs{
+        height: min-content;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .thumbcards{
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px){
+
+    .search-bar{
+        width: 25%;
+        margin: 0 0 0 5%;    
+    }
+    nav button[type="submit"]{
+        margin: 0 5% 0 0;
+    }
+    #video h2{
+        font-size: 20px;
+    }
+    #likes p, #likes > span{
+        padding: 0 5px;
+    }
+    #video button{
+        padding: 0;
+        font-size: 90%;
+    }
+    #likes > p{
+        font-size: 80%;
+        width: 20%;
+    }
+}
+
+@media (max-width: 400px){
+    body *{
+        margin: 0;
+        padding: 0;
+    }
+    html *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        width: 100%;
+    }
+    nav img{
+        height: 15px;
+    }
+    nav *{
+        font-size: 12px;
+    }
+    .profile{
+        height: 15px;
+    }
+    .fa-bars{
+        font-size: 10px;
+    }
+    #mains{
+        width: 100%;
+    }
+    .search-bar{
+        width: 15%;
+    }
+    .thumbcards h5{
+        font-size: 13px;
+    }
+    .thumbcards p{
+        font-size: 12px;
+    }
+    .thumbcards > img{
+        height: 70px;
+    }
+}
